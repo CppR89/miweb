@@ -405,6 +405,9 @@ font-size: 2.5rem;
 
 
 /* Seccion Sobre Nosotros */
+.nosotros {
+    padding-top: 1rem;
+}
 .nosotros h2{
     text-align: center;
     font-size: 4rem;
