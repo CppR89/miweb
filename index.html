@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CDR argentina</title>
+    <!-- FONTS KNOWLEDGE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- FONTS KNOWLEDGE -->
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400&family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
     <!-- FONTS AWESOME -->
-    <script src="https://kit.fontawesome.com/9b8103ef2f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/08b7ce27ca.js" crossorigin="anonymous"></script>
     <!-- CUSTOM CSS-->
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos_global.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
@@ -23,63 +25,88 @@
     <header class="encabezado" id="inicio">
         <div class="contenido-navegacion">
             <div class="logo">
-                <img src="img/cd.ico" alt="CDR argentina LOGO" class="contenido-cd">
-                <h2><span>CDR</span> argentina</h2>
+                <img height="50" width="50" data-src="img/cd.ico" alt="CDR argentina LOGO" class="logo-cd">
+                <h2><span>CDR</span> Argentina</h2>
             </div>
+
             <nav class="navegacion ocultar">
-                <a href="#inicio">Inicio</a>
-                <a href="#productos">Producto</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#contacto">Contacto</a>
+                <ul class="menu">
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#productos">Productos</a>
+                    </li>
+                    <li>
+                        <a href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="#servicios">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </nav>
-            <div class="hamburguesa">
+            <div class="hamburguesa" aria-label="menú">
                 <span></span><span></span><span></span>
             </div>
         </div>
+
         <div class="contenido-encabezado contenedor">
             <div class="texto-encabezado">
-                <h1>Estamos a la vanguardia de la tecnologia</h1>
+                <h1>Estamos a la vanguardia de la tecnología</h1>
             </div>
+
             <form class="formulario-encabezado">
                 <h2>Reciba Nuestras Ofertas</h2>
-                <div class="input-encabezado">
-                    <input type="text" placeholder="Nombre">
-                </div>
-                <div class="input-encabezado">
-                    <input type="mail" placeholder="Correo">
-                </div>
-                <div class="input-encabezado">
-                    <input type="tel" placeholder="Telefono">
-                </div>
+                <div class="contenedor-form">
+                    <div class="input-encabezado">
+                        <input type="text" id="nombre" class="form-input" placeholder=" ">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <span class="form-linea"></span>
+                    </div>
+                    <div class="input-encabezado">
+                        <input type="text" id="apellido" class="form-input" placeholder=" ">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <span class="form-linea"></span>
+                    </div>
+                    <div class="input-encabezado">
+                        <input type="mail" id="mail" class="form-input" placeholder=" ">
+                        <label for="mail" class="form-label">Correo:</label>
+                        <span class="form-linea"></span>
+                    </div>
 
-                <div class="boton-encabezado">
-                    <input class="btn azul" type="submit" value="Suscribirse">
+                    <input class="boton-encabezado" type="submit" value="Suscribirse">
                 </div>
-
             </form>
         </div>
     </header>
-
     <div class="ventajas">
         <div class="contenido-ventajas contenedor">
-            <div class="ventaja">
-                <i class="fas fa-clock"></i>
-                <h3>Entregas en tiempo y forma</h3>
-                <p> El tiempo de entrega es fundamental para garantizar un servicio de calidad al consumidor,
-                    gestionando las mercancías para llegar a su destino lo más rápido posible.
+            <div class="ventaja c1">
+                <div>
+                    <i class="fas fa-clock"></i>
+                    <h3>Entregas en tiempo y forma</h3>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit quo voluptatem nostrum quis,
+                    voluptatum a. Culpa error eligendi, deleniti aliquam fuga ut harum in numquam dolorum amet possimus
                 </p>
             </div>
-            <div class="ventaja">
-                <i class="fas fa-paint-brush"></i>
-                <h3>Diseño de interfaces modernas</h3>
-                <p>"Todo está diseñado.
-                    Pocas cosas están bien diseñadas"
+            <div class="ventaja c2">
+                <div>
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Diseño de interfaces modernas</h3>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit quo voluptatem nostrum quis,
+                    voluptatum a. Culpa error eligendi, deleniti aliquam fuga ut harum in numquam dolorum amet possimus
                 </p>
             </div>
-            <div class="ventaja">
-                <i class="fas fa-code"></i>
-                <h3>Software de calidad</h3>
+            <div class="ventaja c3">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h3>Software de calidad</h3>
+                </div>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa sit quo voluptatem nostrum quis,
                     voluptatum a. Culpa error eligendi, deleniti aliquam fuga ut harum in numquam dolorum amet possimus
                 </p>
@@ -87,18 +114,126 @@
         </div>
     </div>
 
-    <section class="producto contenedor" id="producto"></section>
-
     <section class="nosotros contenedor" id="nosotros">
         <h2>Sobre nosotros</h2>
         <div class="contenido-nosotros">
 
             <div class="texto-nosotros">
                 <h3>Hacemos magia con codigo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit quam laudantium sed minima consectetur!
-                    Sint deleniti officia blanditiis omnis possimus temporibus nihil quos. Molestias a cumque libero
-                    adipisci, voluptatum minus?</p>
+                <p>Con más de 10 años de experiencia en el mercado informático, nuestra empresa se transforma día a día, 
+                    siguiendo los pasos de la evolución tecnológica que, actualmente, nos demanda adaptarnos de manera continua a las exigencias de nuestros clientes.
+
+                </p>
                 <a href="#" class="btn bordes"> saber más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos contenedor" id="productos">
+        <h2 class="texto-productos">Productos</h2>
+        <div class="botones-productos">
+            <button class="todos btn-productos btn-celeste">Todos</button>
+            <button class="motherboard btn-productos btn-celeste">Motherboard</button>
+            <button class="placa-de-video btn-productos btn-celeste">Placas de videos</button>
+            <button class="disco-solido btn-productos btn-celeste">Discos solidos</button>
+            <button class="cartucho btn-productos btn-celeste">Cartucho</button>
+        </div>
+        <div class="contenido-productos">
+            <div class="producto" data-producto="motherboard">
+                <img data-src="img/assets/Asus-MaximusVIII-Extreme.jpg" alt="motherboard">
+                <p>Asus Rog Maximus VIII Extreme/Assembly</p>
+                <div class="precio">
+                    <p>$ 150.000</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="motherboard">
+                <img data-src="img/assets/Asus-Rog-Strix-Z590.jpeg"" alt="motherboard">
+                <p>Asus Rog Strix Z590-e Gaming Wifi.</p>
+                <div class="precio">
+                    <p>$ 79.500</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="motherboard">
+                <img data-src="img/assets/Asus-Prime-X570-P.jpg" alt="motherboard">
+                <p>Asus Prime X570-P</p>
+                <div class="precio">
+                    <p>$ 48.990</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="placaVideo">
+                <img data-src="img/assets/Asus-KO-RTX3060-OC-12GB.jpg" alt="placa-de-video">
+                <p>Asus Ko RTX3060 12gb Gaming</p>
+                <div class="precio">
+                    <p>$ 380.900</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="placaVideo">
+                <img data-src="img/assets/rog-strix-radeon-rx-5600-xt.jpg" alt="placa-de-video">
+                <p>Asus Rog Strix Radeon RX5600 XT 8gb.</p>
+                <div class="precio">
+                    <p>$ 168.999</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="placaVideo">
+                <img data-src="img/assets/Asus-Dual-GeForce-GTX1650.jpeg" alt="placa-de-video">
+                <p>Asus Dual GeForce GTX1650 4gb</p>
+                <div class="precio">
+                    <p>$ 88.500</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="discoSolido">
+                <img data-src="img/assets/ssd-1tb-wd-Green.png" alt="disco-solido">
+                <p>SSD WD Green 1tb</p>
+                <div class="precio">
+                    <p>$ 19.950</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="discoSolido">
+                <img data-src="img/assets/ssd-480gb-wd-Green.jpg" alt="disco-solido">
+                <p>SSD WD Green 1tb</p>
+                <div class="precio">
+                    <p>$ 11.500</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="discoSolido">
+                <img data-src="img/assets/ssd-kingston-480gb.jpg" alt="disco-solido">
+                <p>SSD Kingston 480gb</p>
+                <div class="precio">
+                    <p>$ 13.100</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="cartucho">
+                <img data-src="img/assets/HP-60XL.jpeg" alt="cartucho">
+                <p>Cartucho HP 60 XL</p>
+                <div class="precio">
+                    <p>$ 12.000</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="cartucho">
+                <img data-src="img/assets/gneiss.jpg" alt="cartucho">
+                <p>Cartucho GNEISS Alternativo HP 60 XL</p>
+                <div class="precio">
+                    <p>$ 4.200</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
+            </div>
+            <div class="producto" data-producto="cartucho">
+                <img data-src="img/assets/Epson-296.jpeg" alt="cartucho">
+                <p>Cartucho Epson 296</p>
+                <div class="precio">
+                    <p>$ 11.000</p>
+                    <button><i class="fas fa-shopping-basket"></i></button>
+                </div>
             </div>
         </div>
     </section>
@@ -135,15 +270,15 @@
                     vitae earum consequatur dignissimos.</p>
             </div>
             <div class="servicio">
-                <i class="fas fa-code"></i>
-                <h3>Ingenieria de software</h3>
+                <i class="fas fa-solid fa-screwdriver-wrench"></i>
+                <h3>Repaciones de equipos</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique architecto deserunt
                     pariatur, ab soluta sequi voluptatem nostrum debitis rem illo repellendus sint nobis molestias eum
                     vitae earum consequatur dignissimos.</p>
             </div>
             <div class="servicio">
-                <i class="fas fa-database"></i>
-                <h3>Bases de datos</h3>
+                <i class="fas fa-solid fa-droplet"></i>
+                <h3>Recargas</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam similique architecto deserunt
                     pariatur, ab soluta sequi voluptatem nostrum debitis rem illo repellendus sint nobis molestias eum
                     vitae earum consequatur dignissimos.</p>
@@ -153,11 +288,18 @@
 
     <section class="contacto" id="contacto">
         <h2>Contactanos</h2>
+        <div id="map"></div>
         <div class="contenido-contacto">
             <div class="informacion-contacto">
                 <h3>Información de contacto</h3>
-                <p>CDRargentina@tecnology.com</p>
-                <p>+54 1122091099</p>
+                <p><i class="fas fa-map-marker-alt"></i> Avenida Dorrego 1521</p>
+                <p><i class="fas fa-envelope"></i> CDRargentina@tecnology.com</p>
+                <p><i class="fas fa-phone-alt"></i> +54 1122091099</p>
+                <div class="redes-sociales">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
             </div>
             <form class="formulario-contacto">
                 <div class="input-contacto">
@@ -177,7 +319,7 @@
                     <input type="text" id="asunto" placeholder="asunto...">
                 </div>
                 <div class="input-contacto">
-                    <label for="telefono">Mensaje</label>
+                    <label for="mensaje">Mensaje</label>
                     <textarea></textarea>
                 </div>
                 <div class="input-contacto">
@@ -187,24 +329,34 @@
         </div>
     </section>
 
-    <section class="social">
-        <p>Seguinos CDR argentina</p>
-        <div class="links">
-            <a href="https://facebook.com">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://twitter.com">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://linkdin.com">
-                <i class="fab fa-linkedin"></i>
-            </a>
+    <div class="pie-pagina ">
+        <div class="contenedor-piepagina contenedor">
+            <div class="info">
+                <h3>Dirección</h3>
+                <p>Avenida Dorrego 1524</p>
+            </div>
+            <div class="info">
+                <h3>Horarios</h3>
+                <p>Lunes - Viernas 9hs - 17hs</p>
+                <p>+54 1122091099</p>
+                <div class="redes-sociales redes-pie">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="info">
+                <h3>Noticias</h3>
+                <p>suscribete para recibir más noticias</p>
+                <input type="email" placeholder="Tu correo">
+                <input type="submit" class="btn azul" value="Suscribirse">
+            </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="logo2">
-            <img src="img/cd.ico" alt="CDR argentina LOGO" class="footer-cd">
+            <img data-src="img/cd.ico" alt="CDR argentina LOGO" class="footer-cd">
             <h2><span>CDR</span> argentina</h2>
         </div>
         <p>Todos los derechos reservados <span class="fecha"></span> &copy; Desarollo por Cinthia Gómez | Cristian
@@ -212,6 +364,7 @@
     </footer>
     <!-- CUSTOM JAVASCRIPT -->
     <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB97Sxh6twMUi_r7QeZGAqVwtmRHuOp5Po&callback=iniciarMap"></script>
 </body>
 
 </html>

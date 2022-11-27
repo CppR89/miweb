@@ -1,0 +1,68 @@
+:root{
+    --oscuro:#07070A;
+    --azulOscuro:#0A1128;
+    --azulClaro:#006FE6;
+    --celesteClaro:#33AEFF;
+    --celesteMedio:#09C0FF;
+    --violetaMedio:#2714FA;
+    --rojoCocaCola:#FA2114;
+    --blanco:#FEFCFB;
+    --titulos:'Baloo 2', cursive;
+    --parrafos:'Montserrat', sans-serif;
+    --letraRoboto: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3 {
+    font-family: var(--titulos);
+}
+
+p {
+    font-family: var(--parrafos);
+}
+
+a{
+    font-family: var(--parrafos);
+}
+
+.ocultar{
+    display: none;
+}
+
+.contenedor{
+    margin: 0 auto;
+    max-width: 120rem;
+    width: 95%;
+}
+
+
+/* Animación */
+@keyframes desplazamiento {
+
+    /*desplazamiento incial*/
+
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes desplazamiento2 {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
